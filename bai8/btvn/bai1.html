@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calculateFactorrial(n) {
+            if (n === 0) {
+                return 1;
+            } else {
+                return n * calculateFactorial(n - 1);
+            }
+        }
+
+        let n = parseInt(prompt("Nhập số nguyên dương n: "));
+        let factorial = calculateFactorial(n);
+        console.log(`Giai thừa của ${n} là ${factorial}`);
+    </script>
+</body>
+
+</html>
