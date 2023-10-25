@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let inputStr=prompt("nhập chuỗi kí tự:");
+        function countCharfrequency(inputStr){
+            let frequency={};
+            for(let i=0;i<inputStr.length;i++){
+                if(frequency[i]){
+                    frequency[i]++;
+                }else{
+                    frequency[i]=1;
+                }
+                console.log("ký tự" + inputStr[i]+"xuất hiện"+ frequency[i]+"lần");   
+            }
+            return frequency;
+        }
+    </script>
+</body>
+</html>
