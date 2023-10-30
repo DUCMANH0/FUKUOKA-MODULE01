@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function kiemTraSnt(n) {
+            if (n < 2 || n % 2 == 0) return false;
+            for (let i=3; i*i <= n; i+=2){
+                if (n%i == 0) return false;
+            }
+            return true;
+        }
+        function inSnt(N) {
+            let count = 0;
+                number = 2;
+            while (count < N) {
+                if (kiemTraSnt(number)){
+                    console.log(number);
+                    count++;
+                }
+                number++;
+            }
+        }
+        let N=parseInt(prompt("nhập vào số tự nhiên N:"));
+        inSnt(N);
+    </script>
+</body>
+</html>
