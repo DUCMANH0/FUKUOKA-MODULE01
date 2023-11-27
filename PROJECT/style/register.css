@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #d5b4b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+a {
+    border-radius: 20px;
+    border: 1px solid rgb(253, 224, 48);
+    background-color: rgb(253, 224, 48);
+    color:#333;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid rgb(253, 224, 48);
+    background-color: rgb(253, 224, 48);
+    color:#333;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+.right-content button{
+    margin-top: 30px;
+}
+input {
+    background-color: #eee;
+    border: none;
+    padding: 15px 15px;
+    margin: 5px;
+    width: 80%;
+}
+
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+            0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    position: relative;
+    
+}
+.right-content{
+      width: 50%;
+      float: left;
+      text-align: center;
+      height: 100%;
+}
+.left-content{
+    background-color: #333;
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    height: 100%;
+}
+.right-content h1{
+    margin: 50px 0 30px;
+}
+.left-content h1{
+    margin: 80px;
+}
+

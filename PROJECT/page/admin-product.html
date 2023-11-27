@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../style/admin-product.css" />
+</head>
+
+<body>
+  <!-- <section class="nav-bar">
+    <div class="logo">HaLong Bay cruise tour trip</div>
+    <ul class="menu">
+      <li><a href="./home.html">home</a></li>
+      <li><a href="./cart.html">your tours</a></li>
+      <li><a href="">blog</a></li>
+      <li><a href="">about us</a></li>
+      <li><a href="">contact us</a></li>
+    </ul>
+    </div>
+    <div class="login-signup">
+      <a href="" id="hello"><i class="fa-solid fa-user"></i> Account</a>
+      <a href="./register.html" class="header__sign--signUp"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+      <a href="./login.html" class="header__sign--signIn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Log In</a>
+    </div>
+
+  </section> -->
+  <!-- 
+        Thêm - sửa - xóa -sản phẩm
+     -->
+  <form action="">
+    <label for="">Tên sản phẩm</label>
+    <input class="addProduct" id="addNameProduct" type="text" /> <br />
+    <label for="">Img</label>
+    <input class="addProduct" id="addImgProduct" type="file" onchange="changeImage(this)" />
+    <br />
+    <label>Price</label>
+    <input class="addProduct" id="addPriceProduct" type="text" /> <br />
+    <button class="saveBtn" onclick="saveProduct()">Save</button>
+  </form>
+
+  <table border="1px">
+    <thead>
+      <tr>
+        <th>1</th>
+        <th>Tên sản phẩm</th>
+        <th>ID</th>
+        <th>Img</th>
+        <th>Price</th>
+        <th>Trạng thái</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="productsCtl"></tbody>
+  </table>
+</body>
+<scrip src="../js/admin-product.js"></scrip>
+
+</html>
